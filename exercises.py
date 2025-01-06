@@ -8,11 +8,16 @@
 #     print("Data is invalid")
 
 # Exercise 2
-temperature = float(input("Enter the temperature: "))
+# temperature = float(input("Enter the temperature: "))
 
-if temperature < 18:
-    print("Low temperature")
-elif temperature >= 18 and temperature <= 26:
-    print("Normal temperature")
-else:
-    print("High temperature")
+# if temperature < 18:
+#     print("Low temperature")
+# elif temperature >= 18 and temperature <= 26:
+#     print("Normal temperature")
+# else:
+#     print("High temperature")
+
+# Exercise 3
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+if log['level'] == 'ERROR':
+    print(log['message'])
