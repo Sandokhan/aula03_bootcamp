@@ -23,12 +23,19 @@
 #     print(log['message'])
 
 # Exercise 4
-age = int(input("Enter your age: "))
-email = input("Enter your email: ")
+# age = int(input("Enter your age: "))
+# email = input("Enter your email: ")
 
-if age < 18 and age <= 65:
-    print("User age is out of range")
-elif email.count('@') < 1 or email.count('.') == 0:
-    print("User email is invalid")
+# if age < 18 and age <= 65:
+#     print("User age is out of range")
+# elif email.count('@') < 1 or email.count('.') == 0:
+#     print("User email is invalid")
+# else:
+#     print("User data is valid")
+
+# Exercise 5
+transaction = {'value': 12000, 'hour': 20}
+if transaction['value'] > 10000 and (transaction['hour'] < 9 or transaction['hour'] > 18):
+    print("Transaction suspicious")
 else:
-    print("User data is valid")
+    print("Transaction is normal")
