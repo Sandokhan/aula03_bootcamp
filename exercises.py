@@ -41,7 +41,6 @@
 #     print("Transaction is normal")
 
 # Exercise 6
-
 # text = "a raposa marrom salta sobre o cachorro preguiçoso"
 # words = text.split()
 # count_words = {}
@@ -55,9 +54,16 @@
 # print(count_words)
 
 # Exercise 7
+# numbers = [10,20, 30, 40, 50]
+# minimo = min(numbers)
+# maximo = max(numbers)
+# normalizados = [(x - minimo) / (maximo - minimo) for x in numbers]
+# print(normalizados)
 
-numbers = [10,20, 30, 40, 50]
-minimo = min(numbers)
-maximo = max(numbers)
-normalizados = [(x - minimo) / (maximo - minimo) for x in numbers]
-print(normalizados)
+# Exercise 8
+dados = []
+entry = input("Enter the data: ")
+while entry.lower() != "exit":
+    dados.append(entry.lower())
+    entry = input("Enter the data: ")
+print(dados)
