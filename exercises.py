@@ -34,8 +34,24 @@
 #     print("User data is valid")
 
 # Exercise 5
-transaction = {'value': 12000, 'hour': 20}
-if transaction['value'] > 10000 and (transaction['hour'] < 9 or transaction['hour'] > 18):
-    print("Transaction suspicious")
-else:
-    print("Transaction is normal")
+# transaction = {'value': 12000, 'hour': 20}
+# if transaction['value'] > 10000 and (transaction['hour'] < 9 or transaction['hour'] > 18):
+#     print("Transaction suspicious")
+# else:
+#     print("Transaction is normal")
+
+# Exercise 6
+
+text = "a raposa marrom salta sobre o cachorro preguiçoso"
+words = text.split()
+count_words = {}
+
+for word in words:
+    if word in count_words:
+        count_words[word] += 1
+    else:
+        count_words[word] = 1
+
+print(count_words)
+
+
