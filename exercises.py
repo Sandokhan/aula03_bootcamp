@@ -42,16 +42,22 @@
 
 # Exercise 6
 
-text = "a raposa marrom salta sobre o cachorro preguiçoso"
-words = text.split()
-count_words = {}
+# text = "a raposa marrom salta sobre o cachorro preguiçoso"
+# words = text.split()
+# count_words = {}
 
-for word in words:
-    if word in count_words:
-        count_words[word] += 1
-    else:
-        count_words[word] = 1
+# for word in words:
+#     if word in count_words:
+#         count_words[word] += 1
+#     else:
+#         count_words[word] = 1
 
-print(count_words)
+# print(count_words)
 
+# Exercise 7
 
+numbers = [10,20, 30, 40, 50]
+minimo = min(numbers)
+maximo = max(numbers)
+normalizados = [(x - minimo) / (maximo - minimo) for x in numbers]
+print(normalizados)
